@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openisp"
+version = "0.1.0"
+description = "A modular, source-backed Python reference image signal processor"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "openISP contributors" }]
+dependencies = [
+  "numpy>=1.24,<3",
+  "scipy>=1.10,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.0",
+  "pytest>=7.4,<9",
+  "pytest-cov>=4.1,<7",
+]
+visualization = ["matplotlib>=3.7,<4"]
+
+[project.scripts]
+openisp = "openisp.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src", "model" = "model" }
+packages = ["openisp", "openisp.core", "openisp.stages", "model"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+markers = [
+  "performance: bounded performance and memory regression checks",
+  "regression: numerical or image regression fixtures",
+]

@@ -1,0 +1,10 @@
+{
+  "id": "116",
+  "implementation_state": "implemented",
+  "workbook_status_at_verification": "Not started",
+  "summary": "RGGB, BGGR, GBRG and GRBG are exercised across every current Bayer-domain stage and the complete reference pipeline.",
+  "implementation": ["src/openisp/core/types.py", "src/openisp/stages/legacy.py"],
+  "tests": ["tests/unit/test_bayer_patterns.py", "tests/integration/test_reference_pipeline.py"],
+  "verification": ".venv/bin/python -m pytest",
+  "result": "41 passed"
+}

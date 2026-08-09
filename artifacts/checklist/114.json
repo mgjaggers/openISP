@@ -1,0 +1,10 @@
+{
+  "id": "114",
+  "implementation_state": "implemented",
+  "workbook_status_at_verification": "Not started",
+  "summary": "Saturation is applied to hue-rotated chroma instead of overwriting the rotation with the input planes.",
+  "implementation": ["model/hsc.py", "src/openisp/stages/legacy.py"],
+  "tests": ["tests/unit/test_stabilization_fixes.py", "tests/regression/test_image_regression.py"],
+  "verification": ".venv/bin/python -m pytest",
+  "result": "41 passed"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "115",
+  "implementation_state": "implemented",
+  "workbook_status_at_verification": "Not started",
+  "summary": "The GRBG chroma-noise path now uses valid two-dimensional indexing and the correct blue sample coordinate.",
+  "implementation": ["model/cnf.py", "src/openisp/stages/legacy.py"],
+  "tests": ["tests/unit/test_bayer_patterns.py", "tests/integration/test_reference_pipeline.py"],
+  "verification": ".venv/bin/python -m pytest",
+  "result": "41 passed"
+}

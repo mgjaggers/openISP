@@ -154,11 +154,11 @@ class CNF:
                 elif self.bayer_pattern == 'grbg':
                     gr = img_pad[y + 4, x + 4]
                     r = img_pad[y + 4, x + 5]
-                    b = img_pad[y + 5, x + 2]
+                    b = img_pad[y + 5, x + 4]
                     gb = img_pad[y + 5, x + 5]
-                    cnf_img[y, x, :] = gr
-                    cnf_img[y, x + 1, :] = self.cnf('r', y + 4, x + 5, img_pad)
-                    cnf_img[y + 1, x, :] = self.cnf('b', y + 5, x + 4, img_pad)
-                    cnf_img[y + 1, x + 1, :] = gb
+                    cnf_img[y, x] = gr
+                    cnf_img[y, x + 1] = self.cnf('r', y + 4, x + 5, img_pad)
+                    cnf_img[y + 1, x] = self.cnf('b', y + 5, x + 4, img_pad)
+                    cnf_img[y + 1, x + 1] = gb
         self.img = cnf_img
         return self.clipping()

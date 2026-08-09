@@ -1,4 +1,3 @@
-from matplotlib import pyplot as plt
 import numpy as np
 import csv
 from model.dpc import DPC
@@ -84,15 +83,15 @@ with f:
             bl_b  = int(value) if '_b' in str(parameter) else bl_b
             alpha = int(value) if '_alpha' in str(parameter) else alpha
             beta  = int(value) if '_beta' in str(parameter) else beta
-            blc_clip = int(value) if '_clip' in str(parameter) else beta
+            blc_clip = int(value) if '_clip' in str(parameter) else blc_clip
         elif 'bayer_pattern' in str(parameter):
             bayer_pattern = str(value)
-        elif 'awb' in str(parameter):
-            r_gain  = int(value) if '_rgain' in str(parameter) else r_gain
-            gr_gain = int(value) if '_grgain' in str(parameter) else gr_gain
-            gb_gain = int(value) if '_gbgain' in str(parameter) else gb_gain
-            b_gain  = int(value) if '_bgain' in str(parameter) else b_gain
-            awb_clip = int(value) if '_clip' in str(parameter) else awb_clip
+        elif str(parameter) in {'r_gain', 'gr_gain', 'gb_gain', 'b_gain', 'awb_clip'}:
+            r_gain = float(value) if str(parameter) == 'r_gain' else r_gain
+            gr_gain = float(value) if str(parameter) == 'gr_gain' else gr_gain
+            gb_gain = float(value) if str(parameter) == 'gb_gain' else gb_gain
+            b_gain = float(value) if str(parameter) == 'b_gain' else b_gain
+            awb_clip = int(value) if str(parameter) == 'awb_clip' else awb_clip
         elif 'cfa' in str(parameter):
             cfa_mode = str(value) if '_mode' in str(parameter) else cfa_mode
             cfa_clip = int(value) if '_clip' in str(parameter) else cfa_clip
@@ -171,7 +170,7 @@ with f:
             ee_emclip[1] = int(value) if 'emclip_max' in str(parameter) else ee_emclip[1]
         elif 'fcs' in str(parameter):
             fcs_edge[0] = int(value) if 'edge_min' in str(parameter) else fcs_edge[0]
-            fcs_edge[1] = int(value) if 'edge_min' in str(parameter) else fcs_edge[1]
+            fcs_edge[1] = int(value) if 'edge_max' in str(parameter) else fcs_edge[1]
             fcs_gain = int(value) if '_gain' in str(parameter) else fcs_gain
             fcs_intercept = int(value) if '_intercept' in str(parameter) else fcs_intercept
             fcs_slope = int(value) if '_slope' in str(parameter) else fcs_slope
@@ -220,7 +219,7 @@ print(50*'-' + '\nAnti-aliasing Filtering Done......')
 #plt.imshow(rawimg_diff, cmap='gray')
 #plt.show()
 
-# white balance gain control
+# white-balance gain application (estimation is a separate modular stage)
 parameter = [r_gain, gr_gain, gb_gain, b_gain]
 awb = WBGC(rawimg_aaf, parameter, bayer_pattern, awb_clip)
 rawimg_awb = awb.execute()
@@ -267,7 +266,7 @@ print(50*'-' + '\nGamma Correction Done......')
 #plt.show()
 
 # color space conversion
-csc = CSC(rgbimg_ccm, csc)
+csc = CSC(rgbimg_gc, csc)
 yuvimg_csc = csc.execute()
 print(50*'-' + '\nColor Space Conversion Done......')
 #plt.imshow(yuvimg_csc[:,:,0], cmap='gray')

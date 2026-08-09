@@ -1,31 +1,40 @@
-name: Kevin's GitHub Actions
-on: 
+name: openISP quality gates
+
+on:
   push:
-    branches:
-      - "master"
-      - "kevin-branch"
+    branches: ["master", "kevin-branch"]
   pull_request:
     branches: ["master"]
 
-jobs:
-  Kevin-build:
-    runs-on: ${{ matrix.os }}
+permissions:
+  contents: read
 
+jobs:
+  test:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node-version: [12.x]
+        python-version: ["3.11"]
+    runs-on: ${{ matrix.os }}
     steps:
-      - run: echo "? The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "? This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "? The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
-            fetch-depth: 0
-      - run: echo "? The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "?️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "? This job's status is ${{ job.status }}."
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install package and test dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Verify checklist traceability
+        run: >-
+          python tools/export_checklist_manifest.py
+          docs/openISP_professional_ISP_checklist_UPDATED_v2.xlsx
+          docs/checklist_mapping.json --check
+      - name: Verify workbook structure
+        run: >-
+          python tools/verify_isp_checklist.py
+          docs/openISP_professional_ISP_checklist_UPDATED_v2.xlsx
+          --manifest docs/checklist_mapping.json
+      - name: Run test suite
+        run: python -m pytest
+      - name: Build distribution
+        run: python -m build

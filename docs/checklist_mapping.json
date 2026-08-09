@@ -1,0 +1,3342 @@
+{
+  "definition_of_done": [
+    "typed configuration and declared input/output contract",
+    "source-backed implementation and license/provenance record",
+    "unit and numerical invariant tests",
+    "pipeline integration and adjacent-stage regression tests",
+    "required image, IQ, performance or hardware evidence",
+    "user-facing documentation and reproducible configuration",
+    "acceptance criteria satisfied before workbook status changes to Done"
+  ],
+  "item_count": 151,
+  "items": [
+    {
+      "capability": "RAW bit-depth normalization and white-level handling",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/1.json",
+      "id": "1",
+      "implementation_files": [
+        "src/openisp/raw/raw_bit_depth_normalization_and_white_level_handling.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/raw_bit_depth_normalization_and_white_level_handling.py",
+      "test_target": "tests/raw/test_raw_bit_depth_normalization_and_white_level_handling.py",
+      "test_targets": [
+        "tests/raw/test_raw_bit_depth_normalization_and_white_level_handling.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Sensor linearization",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/2.json",
+      "id": "2",
+      "implementation_files": [
+        "src/openisp/raw/sensor_linearization.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/sensor_linearization.py",
+      "test_target": "tests/raw/test_sensor_linearization.py",
+      "test_targets": [
+        "tests/raw/test_sensor_linearization.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Companding/decompanding",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/3.json",
+      "id": "3",
+      "implementation_files": [
+        "src/openisp/raw/companding_decompanding.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/companding_decompanding.py",
+      "test_target": "tests/raw/test_companding_decompanding.py",
+      "test_targets": [
+        "tests/raw/test_companding_decompanding.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Optical-black-region processing",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/4.json",
+      "id": "4",
+      "implementation_files": [
+        "src/openisp/raw/optical_black_region_processing.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/optical_black_region_processing.py",
+      "test_target": "tests/raw/test_optical_black_region_processing.py",
+      "test_targets": [
+        "tests/raw/test_optical_black_region_processing.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Row/column fixed-pattern noise correction",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/5.json",
+      "id": "5",
+      "implementation_files": [
+        "src/openisp/raw/row_column_fixed_pattern_noise_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/row_column_fixed_pattern_noise_correction.py",
+      "test_target": "tests/raw/test_row_column_fixed_pattern_noise_correction.py",
+      "test_targets": [
+        "tests/raw/test_row_column_fixed_pattern_noise_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Green-channel imbalance/equalization",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/6.json",
+      "id": "6",
+      "implementation_files": [
+        "src/openisp/raw/green_channel_imbalance_equalization.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/green_channel_imbalance_equalization.py",
+      "test_target": "tests/raw/test_green_channel_imbalance_equalization.py",
+      "test_targets": [
+        "tests/raw/test_green_channel_imbalance_equalization.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Lens-shading correction",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/7.json",
+      "id": "7",
+      "implementation_files": [
+        "src/openisp/raw/lens_shading_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/lens_shading_correction.py",
+      "test_target": "tests/raw/test_lens_shading_correction.py",
+      "test_targets": [
+        "tests/raw/test_lens_shading_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "CCT/CRA-dependent color-shading correction",
+      "category": "1. RAW front end",
+      "dependencies": [
+        "7",
+        "24"
+      ],
+      "evidence": "artifacts/checklist/7a.json",
+      "id": "7a",
+      "implementation_files": [
+        "src/openisp/raw/cct_cra_dependent_color_shading_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/raw/cct_cra_dependent_color_shading_correction.py",
+      "test_target": "tests/raw/test_cct_cra_dependent_color_shading_correction.py",
+      "test_targets": [
+        "tests/raw/test_cct_cra_dependent_color_shading_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Static sensor defect-map support",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/8.json",
+      "id": "8",
+      "implementation_files": [
+        "src/openisp/raw/static_sensor_defect_map_support.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/static_sensor_defect_map_support.py",
+      "test_target": "tests/raw/test_static_sensor_defect_map_support.py",
+      "test_targets": [
+        "tests/raw/test_static_sensor_defect_map_support.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "PDAF masked-pixel correction, if applicable",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/9.json",
+      "id": "9",
+      "implementation_files": [
+        "src/openisp/raw/pdaf_masked_pixel_correction_if_applicable.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/pdaf_masked_pixel_correction_if_applicable.py",
+      "test_target": "tests/raw/test_pdaf_masked_pixel_correction_if_applicable.py",
+      "test_targets": [
+        "tests/raw/test_pdaf_masked_pixel_correction_if_applicable.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Gain/exposure-dependent sensor noise model",
+      "category": "1. RAW front end",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/10.json",
+      "id": "10",
+      "implementation_files": [
+        "src/openisp/raw/gain_exposure_dependent_sensor_noise_model.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M2-linear-core",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/raw/gain_exposure_dependent_sensor_noise_model.py",
+      "test_target": "tests/raw/test_gain_exposure_dependent_sensor_noise_model.py",
+      "test_targets": [
+        "tests/raw/test_gain_exposure_dependent_sensor_noise_model.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Bayer/RGB histogram",
+      "category": "2. Image statistics",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/11.json",
+      "id": "11",
+      "implementation_files": [
+        "src/openisp/statistics/bayer_rgb_histogram.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/statistics/bayer_rgb_histogram.py",
+      "test_target": "tests/statistics/test_bayer_rgb_histogram.py",
+      "test_targets": [
+        "tests/statistics/test_bayer_rgb_histogram.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Regional exposure statistics",
+      "category": "2. Image statistics",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/12.json",
+      "id": "12",
+      "implementation_files": [
+        "src/openisp/statistics/regional_exposure_statistics.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/statistics/regional_exposure_statistics.py",
+      "test_target": "tests/statistics/test_regional_exposure_statistics.py",
+      "test_targets": [
+        "tests/statistics/test_regional_exposure_statistics.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Highlight/saturation statistics",
+      "category": "2. Image statistics",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/13.json",
+      "id": "13",
+      "implementation_files": [
+        "src/openisp/statistics/highlight_saturation_statistics.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/statistics/highlight_saturation_statistics.py",
+      "test_target": "tests/statistics/test_highlight_saturation_statistics.py",
+      "test_targets": [
+        "tests/statistics/test_highlight_saturation_statistics.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "AWB grid statistics",
+      "category": "2. Image statistics",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/14.json",
+      "id": "14",
+      "implementation_files": [
+        "src/openisp/statistics/awb_grid_statistics.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/statistics/awb_grid_statistics.py",
+      "test_target": "tests/statistics/test_awb_grid_statistics.py",
+      "test_targets": [
+        "tests/statistics/test_awb_grid_statistics.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Focus/sharpness statistics",
+      "category": "2. Image statistics",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/15.json",
+      "id": "15",
+      "implementation_files": [
+        "src/openisp/statistics/focus_sharpness_statistics.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/statistics/focus_sharpness_statistics.py",
+      "test_target": "tests/statistics/test_focus_sharpness_statistics.py",
+      "test_targets": [
+        "tests/statistics/test_focus_sharpness_statistics.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Scene brightness/lux estimate",
+      "category": "2. Image statistics",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/16.json",
+      "id": "16",
+      "implementation_files": [
+        "src/openisp/statistics/scene_brightness_lux_estimate.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/statistics/scene_brightness_lux_estimate.py",
+      "test_target": "tests/statistics/test_scene_brightness_lux_estimate.py",
+      "test_targets": [
+        "tests/statistics/test_scene_brightness_lux_estimate.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Frame-to-frame statistics history",
+      "category": "2. Image statistics",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/17.json",
+      "id": "17",
+      "implementation_files": [
+        "src/openisp/statistics/frame_to_frame_statistics_history.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/statistics/frame_to_frame_statistics_history.py",
+      "test_target": "tests/statistics/test_frame_to_frame_statistics_history.py",
+      "test_targets": [
+        "tests/statistics/test_frame_to_frame_statistics_history.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Automatic exposure / gain control (AE/AGC)",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/18.json",
+      "id": "18",
+      "implementation_files": [
+        "src/openisp/controls/automatic_exposure_gain_control_ae_agc.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/automatic_exposure_gain_control_ae_agc.py",
+      "test_target": "tests/controls/test_automatic_exposure_gain_control_ae_agc.py",
+      "test_targets": [
+        "tests/controls/test_automatic_exposure_gain_control_ae_agc.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Exposure metering modes and user regions",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/19.json",
+      "id": "19",
+      "implementation_files": [
+        "src/openisp/controls/exposure_metering_modes_and_user_regions.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/exposure_metering_modes_and_user_regions.py",
+      "test_target": "tests/controls/test_exposure_metering_modes_and_user_regions.py",
+      "test_targets": [
+        "tests/controls/test_exposure_metering_modes_and_user_regions.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Highlight-preserving exposure",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/20.json",
+      "id": "20",
+      "implementation_files": [
+        "src/openisp/controls/highlight_preserving_exposure.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/highlight_preserving_exposure.py",
+      "test_target": "tests/controls/test_highlight_preserving_exposure.py",
+      "test_targets": [
+        "tests/controls/test_highlight_preserving_exposure.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Exposure convergence and stability control",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/21.json",
+      "id": "21",
+      "implementation_files": [
+        "src/openisp/controls/exposure_convergence_and_stability_control.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/exposure_convergence_and_stability_control.py",
+      "test_target": "tests/controls/test_exposure_convergence_and_stability_control.py",
+      "test_targets": [
+        "tests/controls/test_exposure_convergence_and_stability_control.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "50/60 Hz anti-flicker",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/22.json",
+      "id": "22",
+      "implementation_files": [
+        "src/openisp/controls/50_60_hz_anti_flicker.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/50_60_hz_anti_flicker.py",
+      "test_target": "tests/controls/test_50_60_hz_anti_flicker.py",
+      "test_targets": [
+        "tests/controls/test_50_60_hz_anti_flicker.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Automatic white-balance estimation",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/23.json",
+      "id": "23",
+      "implementation_files": [
+        "src/openisp/controls/automatic_white_balance_estimation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/automatic_white_balance_estimation.py",
+      "test_target": "tests/controls/test_automatic_white_balance_estimation.py",
+      "test_targets": [
+        "tests/controls/test_automatic_white_balance_estimation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Illuminant and correlated-color-temperature estimation",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/24.json",
+      "id": "24",
+      "implementation_files": [
+        "src/openisp/controls/illuminant_and_correlated_color_temperature_estimation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/illuminant_and_correlated_color_temperature_estimation.py",
+      "test_target": "tests/controls/test_illuminant_and_correlated_color_temperature_estimation.py",
+      "test_targets": [
+        "tests/controls/test_illuminant_and_correlated_color_temperature_estimation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "AWB convergence and temporal smoothing",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/25.json",
+      "id": "25",
+      "implementation_files": [
+        "src/openisp/controls/awb_convergence_and_temporal_smoothing.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/awb_convergence_and_temporal_smoothing.py",
+      "test_target": "tests/controls/test_awb_convergence_and_temporal_smoothing.py",
+      "test_targets": [
+        "tests/controls/test_awb_convergence_and_temporal_smoothing.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Autofocus controller",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/26.json",
+      "id": "26",
+      "implementation_files": [
+        "src/openisp/controls/autofocus_controller.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/autofocus_controller.py",
+      "test_target": "tests/controls/test_autofocus_controller.py",
+      "test_targets": [
+        "tests/controls/test_autofocus_controller.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Manual AE/AWB/AF overrides and locks",
+      "category": "3. Automatic control",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/27.json",
+      "id": "27",
+      "implementation_files": [
+        "src/openisp/controls/manual_ae_awb_af_overrides_and_locks.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/controls/manual_ae_awb_af_overrides_and_locks.py",
+      "test_target": "tests/controls/test_manual_ae_awb_af_overrides_and_locks.py",
+      "test_targets": [
+        "tests/controls/test_manual_ae_awb_af_overrides_and_locks.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Multi-exposure HDR ingestion",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/28.json",
+      "id": "28",
+      "implementation_files": [
+        "src/openisp/hdr/multi_exposure_hdr_ingestion.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/multi_exposure_hdr_ingestion.py",
+      "test_target": "tests/hdr/test_multi_exposure_hdr_ingestion.py",
+      "test_targets": [
+        "tests/hdr/test_multi_exposure_hdr_ingestion.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "HDR exposure normalization",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/29.json",
+      "id": "29",
+      "implementation_files": [
+        "src/openisp/hdr/hdr_exposure_normalization.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/hdr_exposure_normalization.py",
+      "test_target": "tests/hdr/test_hdr_exposure_normalization.py",
+      "test_targets": [
+        "tests/hdr/test_hdr_exposure_normalization.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Exposure alignment",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/30.json",
+      "id": "30",
+      "implementation_files": [
+        "src/openisp/hdr/exposure_alignment.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/exposure_alignment.py",
+      "test_target": "tests/hdr/test_exposure_alignment.py",
+      "test_targets": [
+        "tests/hdr/test_exposure_alignment.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "HDR merge",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/31.json",
+      "id": "31",
+      "implementation_files": [
+        "src/openisp/hdr/hdr_merge.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/hdr_merge.py",
+      "test_target": "tests/hdr/test_hdr_merge.py",
+      "test_targets": [
+        "tests/hdr/test_hdr_merge.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Motion and ghost detection",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/32.json",
+      "id": "32",
+      "implementation_files": [
+        "src/openisp/hdr/motion_and_ghost_detection.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/motion_and_ghost_detection.py",
+      "test_target": "tests/hdr/test_motion_and_ghost_detection.py",
+      "test_targets": [
+        "tests/hdr/test_motion_and_ghost_detection.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Global tone mapping",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/33.json",
+      "id": "33",
+      "implementation_files": [
+        "src/openisp/hdr/global_tone_mapping.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/global_tone_mapping.py",
+      "test_target": "tests/hdr/test_global_tone_mapping.py",
+      "test_targets": [
+        "tests/hdr/test_global_tone_mapping.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Local/adaptive tone mapping",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/34.json",
+      "id": "34",
+      "implementation_files": [
+        "src/openisp/hdr/local_adaptive_tone_mapping.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/local_adaptive_tone_mapping.py",
+      "test_target": "tests/hdr/test_local_adaptive_tone_mapping.py",
+      "test_targets": [
+        "tests/hdr/test_local_adaptive_tone_mapping.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Highlight roll-off",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/35.json",
+      "id": "35",
+      "implementation_files": [
+        "src/openisp/hdr/highlight_roll_off.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/highlight_roll_off.py",
+      "test_target": "tests/hdr/test_highlight_roll_off.py",
+      "test_targets": [
+        "tests/hdr/test_highlight_roll_off.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Shadow enhancement",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/36.json",
+      "id": "36",
+      "implementation_files": [
+        "src/openisp/hdr/shadow_enhancement.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/shadow_enhancement.py",
+      "test_target": "tests/hdr/test_shadow_enhancement.py",
+      "test_targets": [
+        "tests/hdr/test_shadow_enhancement.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "HLG/PQ output transfer curves, if required",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/37.json",
+      "id": "37",
+      "implementation_files": [
+        "src/openisp/hdr/hlg_pq_output_transfer_curves_if_required.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/hdr/hlg_pq_output_transfer_curves_if_required.py",
+      "test_target": "tests/hdr/test_hlg_pq_output_transfer_curves_if_required.py",
+      "test_targets": [
+        "tests/hdr/test_hlg_pq_output_transfer_curves_if_required.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Gain-aware Bayer-domain spatial denoise",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/38.json",
+      "id": "38",
+      "implementation_files": [
+        "src/openisp/denoise/gain_aware_bayer_domain_spatial_denoise.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/gain_aware_bayer_domain_spatial_denoise.py",
+      "test_target": "tests/denoise/test_gain_aware_bayer_domain_spatial_denoise.py",
+      "test_targets": [
+        "tests/denoise/test_gain_aware_bayer_domain_spatial_denoise.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Post-demosaic chroma denoise",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/39.json",
+      "id": "39",
+      "implementation_files": [
+        "src/openisp/denoise/post_demosaic_chroma_denoise.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/post_demosaic_chroma_denoise.py",
+      "test_target": "tests/denoise/test_post_demosaic_chroma_denoise.py",
+      "test_targets": [
+        "tests/denoise/test_post_demosaic_chroma_denoise.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Temporal noise reduction",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/40.json",
+      "id": "40",
+      "implementation_files": [
+        "src/openisp/denoise/temporal_noise_reduction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/temporal_noise_reduction.py",
+      "test_target": "tests/denoise/test_temporal_noise_reduction.py",
+      "test_targets": [
+        "tests/denoise/test_temporal_noise_reduction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Motion estimation for temporal processing",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/41.json",
+      "id": "41",
+      "implementation_files": [
+        "src/openisp/denoise/motion_estimation_for_temporal_processing.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/motion_estimation_for_temporal_processing.py",
+      "test_target": "tests/denoise/test_motion_estimation_for_temporal_processing.py",
+      "test_targets": [
+        "tests/denoise/test_motion_estimation_for_temporal_processing.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Motion-adaptive temporal blending",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/42.json",
+      "id": "42",
+      "implementation_files": [
+        "src/openisp/denoise/motion_adaptive_temporal_blending.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/motion_adaptive_temporal_blending.py",
+      "test_target": "tests/denoise/test_motion_adaptive_temporal_blending.py",
+      "test_targets": [
+        "tests/denoise/test_motion_adaptive_temporal_blending.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Hot-pixel versus real-detail discrimination",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/43.json",
+      "id": "43",
+      "implementation_files": [
+        "src/openisp/denoise/hot_pixel_versus_real_detail_discrimination.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/hot_pixel_versus_real_detail_discrimination.py",
+      "test_target": "tests/denoise/test_hot_pixel_versus_real_detail_discrimination.py",
+      "test_targets": [
+        "tests/denoise/test_hot_pixel_versus_real_detail_discrimination.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Multi-frame noise reduction",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/44.json",
+      "id": "44",
+      "implementation_files": [
+        "src/openisp/denoise/multi_frame_noise_reduction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/multi_frame_noise_reduction.py",
+      "test_target": "tests/denoise/test_multi_frame_noise_reduction.py",
+      "test_targets": [
+        "tests/denoise/test_multi_frame_noise_reduction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Detail-preserving denoise strength control",
+      "category": "5. Noise reduction",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/45.json",
+      "id": "45",
+      "implementation_files": [
+        "src/openisp/denoise/detail_preserving_denoise_strength_control.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/detail_preserving_denoise_strength_control.py",
+      "test_target": "tests/denoise/test_detail_preserving_denoise_strength_control.py",
+      "test_targets": [
+        "tests/denoise/test_detail_preserving_denoise_strength_control.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "An additional edge-aware demosaic",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/46.json",
+      "id": "46",
+      "implementation_files": [
+        "src/openisp/demosaic/an_additional_edge_aware_demosaic.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/demosaic/an_additional_edge_aware_demosaic.py",
+      "test_target": "tests/demosaic/test_an_additional_edge_aware_demosaic.py",
+      "test_targets": [
+        "tests/demosaic/test_an_additional_edge_aware_demosaic.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Zipper-artifact suppression",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/47.json",
+      "id": "47",
+      "implementation_files": [
+        "src/openisp/demosaic/zipper_artifact_suppression.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/demosaic/zipper_artifact_suppression.py",
+      "test_target": "tests/demosaic/test_zipper_artifact_suppression.py",
+      "test_targets": [
+        "tests/demosaic/test_zipper_artifact_suppression.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Moir\u00e9 / alias suppression",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/48.json",
+      "id": "48",
+      "implementation_files": [
+        "src/openisp/demosaic/moir_alias_suppression.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/demosaic/moir_alias_suppression.py",
+      "test_target": "tests/demosaic/test_moir_alias_suppression.py",
+      "test_targets": [
+        "tests/demosaic/test_moir_alias_suppression.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Improved false-color suppression",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/49.json",
+      "id": "49",
+      "implementation_files": [
+        "src/openisp/demosaic/improved_false_color_suppression.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/demosaic/improved_false_color_suppression.py",
+      "test_target": "tests/demosaic/test_improved_false_color_suppression.py",
+      "test_targets": [
+        "tests/demosaic/test_improved_false_color_suppression.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Chromatic-aberration correction",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/50.json",
+      "id": "50",
+      "implementation_files": [
+        "src/openisp/demosaic/chromatic_aberration_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/demosaic/chromatic_aberration_correction.py",
+      "test_target": "tests/demosaic/test_chromatic_aberration_correction.py",
+      "test_targets": [
+        "tests/demosaic/test_chromatic_aberration_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Purple-fringe correction",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/51.json",
+      "id": "51",
+      "implementation_files": [
+        "src/openisp/demosaic/purple_fringe_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/demosaic/purple_fringe_correction.py",
+      "test_target": "tests/demosaic/test_purple_fringe_correction.py",
+      "test_targets": [
+        "tests/demosaic/test_purple_fringe_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Multiple CCMs by illuminant",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/52.json",
+      "id": "52",
+      "implementation_files": [
+        "src/openisp/color/multiple_ccms_by_illuminant.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/multiple_ccms_by_illuminant.py",
+      "test_target": "tests/color/test_multiple_ccms_by_illuminant.py",
+      "test_targets": [
+        "tests/color/test_multiple_ccms_by_illuminant.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "CCM interpolation by CCT",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/53.json",
+      "id": "53",
+      "implementation_files": [
+        "src/openisp/color/ccm_interpolation_by_cct.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/ccm_interpolation_by_cct.py",
+      "test_target": "tests/color/test_ccm_interpolation_by_cct.py",
+      "test_targets": [
+        "tests/color/test_ccm_interpolation_by_cct.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Gain-dependent CCM or color-noise compensation",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/54.json",
+      "id": "54",
+      "implementation_files": [
+        "src/openisp/color/gain_dependent_ccm_or_color_noise_compensation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/gain_dependent_ccm_or_color_noise_compensation.py",
+      "test_target": "tests/color/test_gain_dependent_ccm_or_color_noise_compensation.py",
+      "test_targets": [
+        "tests/color/test_gain_dependent_ccm_or_color_noise_compensation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Gamut mapping",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/55.json",
+      "id": "55",
+      "implementation_files": [
+        "src/openisp/color/gamut_mapping.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/gamut_mapping.py",
+      "test_target": "tests/color/test_gamut_mapping.py",
+      "test_targets": [
+        "tests/color/test_gamut_mapping.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "3D LUT / look transform",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/56.json",
+      "id": "56",
+      "implementation_files": [
+        "src/openisp/color/3d_lut_look_transform.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/3d_lut_look_transform.py",
+      "test_target": "tests/color/test_3d_lut_look_transform.py",
+      "test_targets": [
+        "tests/color/test_3d_lut_look_transform.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Temperature and tint controls",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/57.json",
+      "id": "57",
+      "implementation_files": [
+        "src/openisp/color/temperature_and_tint_controls.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/temperature_and_tint_controls.py",
+      "test_target": "tests/color/test_temperature_and_tint_controls.py",
+      "test_targets": [
+        "tests/color/test_temperature_and_tint_controls.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Standard output color spaces",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/58.json",
+      "id": "58",
+      "implementation_files": [
+        "src/openisp/color/standard_output_color_spaces.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/standard_output_color_spaces.py",
+      "test_target": "tests/color/test_standard_output_color_spaces.py",
+      "test_targets": [
+        "tests/color/test_standard_output_color_spaces.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Limited- and full-range YUV",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/59.json",
+      "id": "59",
+      "implementation_files": [
+        "src/openisp/color/limited_and_full_range_yuv.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/limited_and_full_range_yuv.py",
+      "test_target": "tests/color/test_limited_and_full_range_yuv.py",
+      "test_targets": [
+        "tests/color/test_limited_and_full_range_yuv.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Color metadata",
+      "category": "7. Color",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/60.json",
+      "id": "60",
+      "implementation_files": [
+        "src/openisp/color/color_metadata.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/color/color_metadata.py",
+      "test_target": "tests/color/test_color_metadata.py",
+      "test_targets": [
+        "tests/color/test_color_metadata.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Gain-aware sharpening",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/61.json",
+      "id": "61",
+      "implementation_files": [
+        "src/openisp/detail/gain_aware_sharpening.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/gain_aware_sharpening.py",
+      "test_target": "tests/detail/test_gain_aware_sharpening.py",
+      "test_targets": [
+        "tests/detail/test_gain_aware_sharpening.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Halo suppression",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/62.json",
+      "id": "62",
+      "implementation_files": [
+        "src/openisp/detail/halo_suppression.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/halo_suppression.py",
+      "test_target": "tests/detail/test_halo_suppression.py",
+      "test_targets": [
+        "tests/detail/test_halo_suppression.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Texture-versus-edge discrimination",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/63.json",
+      "id": "63",
+      "implementation_files": [
+        "src/openisp/detail/texture_versus_edge_discrimination.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/texture_versus_edge_discrimination.py",
+      "test_target": "tests/detail/test_texture_versus_edge_discrimination.py",
+      "test_targets": [
+        "tests/detail/test_texture_versus_edge_discrimination.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Adaptive contrast",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/64.json",
+      "id": "64",
+      "implementation_files": [
+        "src/openisp/detail/adaptive_contrast.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/adaptive_contrast.py",
+      "test_target": "tests/detail/test_adaptive_contrast.py",
+      "test_targets": [
+        "tests/detail/test_adaptive_contrast.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Local contrast",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/65.json",
+      "id": "65",
+      "implementation_files": [
+        "src/openisp/detail/local_contrast.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/local_contrast.py",
+      "test_target": "tests/detail/test_local_contrast.py",
+      "test_targets": [
+        "tests/detail/test_local_contrast.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Scene-dependent saturation",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/66.json",
+      "id": "66",
+      "implementation_files": [
+        "src/openisp/detail/scene_dependent_saturation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/scene_dependent_saturation.py",
+      "test_target": "tests/detail/test_scene_dependent_saturation.py",
+      "test_targets": [
+        "tests/detail/test_scene_dependent_saturation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Skin-tone preservation",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/67.json",
+      "id": "67",
+      "implementation_files": [
+        "src/openisp/detail/skin_tone_preservation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/skin_tone_preservation.py",
+      "test_target": "tests/detail/test_skin_tone_preservation.py",
+      "test_targets": [
+        "tests/detail/test_skin_tone_preservation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Temporal smoothing of visible parameters",
+      "category": "8. Detail and appearance",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/68.json",
+      "id": "68",
+      "implementation_files": [
+        "src/openisp/detail/temporal_smoothing_of_visible_parameters.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/detail/temporal_smoothing_of_visible_parameters.py",
+      "test_target": "tests/detail/test_temporal_smoothing_of_visible_parameters.py",
+      "test_targets": [
+        "tests/detail/test_temporal_smoothing_of_visible_parameters.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Crop",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/69.json",
+      "id": "69",
+      "implementation_files": [
+        "src/openisp/geometry/crop.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/crop.py",
+      "test_target": "tests/geometry/test_crop.py",
+      "test_targets": [
+        "tests/geometry/test_crop.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Resize/downscale",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/70.json",
+      "id": "70",
+      "implementation_files": [
+        "src/openisp/geometry/resize_downscale.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/resize_downscale.py",
+      "test_target": "tests/geometry/test_resize_downscale.py",
+      "test_targets": [
+        "tests/geometry/test_resize_downscale.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Digital zoom",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/71.json",
+      "id": "71",
+      "implementation_files": [
+        "src/openisp/geometry/digital_zoom.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/digital_zoom.py",
+      "test_target": "tests/geometry/test_digital_zoom.py",
+      "test_targets": [
+        "tests/geometry/test_digital_zoom.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "YUV 4:4:4 / 4:2:2 / 4:2:0 outputs",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/72.json",
+      "id": "72",
+      "implementation_files": [
+        "src/openisp/geometry/yuv_4_4_4_4_2_2_4_2_0_outputs.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/yuv_4_4_4_4_2_2_4_2_0_outputs.py",
+      "test_target": "tests/geometry/test_yuv_4_4_4_4_2_2_4_2_0_outputs.py",
+      "test_targets": [
+        "tests/geometry/test_yuv_4_4_4_4_2_2_4_2_0_outputs.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Rotation and mirroring",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/73.json",
+      "id": "73",
+      "implementation_files": [
+        "src/openisp/geometry/rotation_and_mirroring.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/rotation_and_mirroring.py",
+      "test_target": "tests/geometry/test_rotation_and_mirroring.py",
+      "test_targets": [
+        "tests/geometry/test_rotation_and_mirroring.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Lens-distortion correction",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/74.json",
+      "id": "74",
+      "implementation_files": [
+        "src/openisp/geometry/lens_distortion_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/lens_distortion_correction.py",
+      "test_target": "tests/geometry/test_lens_distortion_correction.py",
+      "test_targets": [
+        "tests/geometry/test_lens_distortion_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Fisheye dewarping",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/75.json",
+      "id": "75",
+      "implementation_files": [
+        "src/openisp/geometry/fisheye_dewarping.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/fisheye_dewarping.py",
+      "test_target": "tests/geometry/test_fisheye_dewarping.py",
+      "test_targets": [
+        "tests/geometry/test_fisheye_dewarping.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Rolling-shutter correction",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/76.json",
+      "id": "76",
+      "implementation_files": [
+        "src/openisp/geometry/rolling_shutter_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/rolling_shutter_correction.py",
+      "test_target": "tests/geometry/test_rolling_shutter_correction.py",
+      "test_targets": [
+        "tests/geometry/test_rolling_shutter_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Electronic image stabilization (EIS)",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/77.json",
+      "id": "77",
+      "implementation_files": [
+        "src/openisp/geometry/electronic_image_stabilization_eis.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/electronic_image_stabilization_eis.py",
+      "test_target": "tests/geometry/test_electronic_image_stabilization_eis.py",
+      "test_targets": [
+        "tests/geometry/test_electronic_image_stabilization_eis.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Multiple output paths",
+      "category": "9. Geometry and output",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/78.json",
+      "id": "78",
+      "implementation_files": [
+        "src/openisp/geometry/multiple_output_paths.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/geometry/multiple_output_paths.py",
+      "test_target": "tests/geometry/test_multiple_output_paths.py",
+      "test_targets": [
+        "tests/geometry/test_multiple_output_paths.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Gyro-assisted stabilization",
+      "category": "10. Drone-specific",
+      "dependencies": [
+        "79a"
+      ],
+      "evidence": "artifacts/checklist/79.json",
+      "id": "79",
+      "implementation_files": [
+        "src/openisp/drone/gyro_assisted_stabilization.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/gyro_assisted_stabilization.py",
+      "test_target": "tests/drone/test_gyro_assisted_stabilization.py",
+      "test_targets": [
+        "tests/drone/test_gyro_assisted_stabilization.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "IMU-camera timestamp synchronization and delay calibration",
+      "category": "10. Drone-specific",
+      "dependencies": [
+        "102",
+        "104"
+      ],
+      "evidence": "artifacts/checklist/79a.json",
+      "id": "79a",
+      "implementation_files": [
+        "src/openisp/drone/imu_camera_timestamp_synchronization_and_delay_calibration.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/imu_camera_timestamp_synchronization_and_delay_calibration.py",
+      "test_target": "tests/drone/test_imu_camera_timestamp_synchronization_and_delay_calibration.py",
+      "test_targets": [
+        "tests/drone/test_imu_camera_timestamp_synchronization_and_delay_calibration.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Gyro-assisted rolling-shutter correction",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/80.json",
+      "id": "80",
+      "implementation_files": [
+        "src/openisp/drone/gyro_assisted_rolling_shutter_correction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/gyro_assisted_rolling_shutter_correction.py",
+      "test_target": "tests/drone/test_gyro_assisted_rolling_shutter_correction.py",
+      "test_targets": [
+        "tests/drone/test_gyro_assisted_rolling_shutter_correction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Wide-angle calibration",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/81.json",
+      "id": "81",
+      "implementation_files": [
+        "src/openisp/drone/wide_angle_calibration.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/wide_angle_calibration.py",
+      "test_target": "tests/drone/test_wide_angle_calibration.py",
+      "test_targets": [
+        "tests/drone/test_wide_angle_calibration.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Horizon-stable crop",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/82.json",
+      "id": "82",
+      "implementation_files": [
+        "src/openisp/drone/horizon_stable_crop.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/horizon_stable_crop.py",
+      "test_target": "tests/drone/test_horizon_stable_crop.py",
+      "test_targets": [
+        "tests/drone/test_horizon_stable_crop.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Frame-to-frame exposure consistency",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/83.json",
+      "id": "83",
+      "implementation_files": [
+        "src/openisp/drone/frame_to_frame_exposure_consistency.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/frame_to_frame_exposure_consistency.py",
+      "test_target": "tests/drone/test_frame_to_frame_exposure_consistency.py",
+      "test_targets": [
+        "tests/drone/test_frame_to_frame_exposure_consistency.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Frame-to-frame color consistency",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/84.json",
+      "id": "84",
+      "implementation_files": [
+        "src/openisp/drone/frame_to_frame_color_consistency.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/frame_to_frame_color_consistency.py",
+      "test_target": "tests/drone/test_frame_to_frame_color_consistency.py",
+      "test_targets": [
+        "tests/drone/test_frame_to_frame_color_consistency.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Vibration and high-frequency motion handling",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/85.json",
+      "id": "85",
+      "implementation_files": [
+        "src/openisp/drone/vibration_and_high_frequency_motion_handling.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/vibration_and_high_frequency_motion_handling.py",
+      "test_target": "tests/drone/test_vibration_and_high_frequency_motion_handling.py",
+      "test_targets": [
+        "tests/drone/test_vibration_and_high_frequency_motion_handling.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Multi-camera color/exposure matching",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/86.json",
+      "id": "86",
+      "implementation_files": [
+        "src/openisp/drone/multi_camera_color_exposure_matching.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/multi_camera_color_exposure_matching.py",
+      "test_target": "tests/drone/test_multi_camera_color_exposure_matching.py",
+      "test_targets": [
+        "tests/drone/test_multi_camera_color_exposure_matching.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Low-latency navigation mode",
+      "category": "10. Drone-specific",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/87.json",
+      "id": "87",
+      "implementation_files": [
+        "src/openisp/drone/low_latency_navigation_mode.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/low_latency_navigation_mode.py",
+      "test_target": "tests/drone/test_low_latency_navigation_mode.py",
+      "test_targets": [
+        "tests/drone/test_low_latency_navigation_mode.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Per-sensor tuning profiles",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/88.json",
+      "id": "88",
+      "implementation_files": [
+        "src/openisp/calibration/per_sensor_tuning_profiles.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/per_sensor_tuning_profiles.py",
+      "test_target": "tests/calibration/test_per_sensor_tuning_profiles.py",
+      "test_targets": [
+        "tests/calibration/test_per_sensor_tuning_profiles.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Per-lens tuning profiles",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/89.json",
+      "id": "89",
+      "implementation_files": [
+        "src/openisp/calibration/per_lens_tuning_profiles.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/per_lens_tuning_profiles.py",
+      "test_target": "tests/calibration/test_per_lens_tuning_profiles.py",
+      "test_targets": [
+        "tests/calibration/test_per_lens_tuning_profiles.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Tuning interpolation by analog gain / ISO",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/90.json",
+      "id": "90",
+      "implementation_files": [
+        "src/openisp/calibration/tuning_interpolation_by_analog_gain_iso.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/tuning_interpolation_by_analog_gain_iso.py",
+      "test_target": "tests/calibration/test_tuning_interpolation_by_analog_gain_iso.py",
+      "test_targets": [
+        "tests/calibration/test_tuning_interpolation_by_analog_gain_iso.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Tuning interpolation by exposure time",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/91.json",
+      "id": "91",
+      "implementation_files": [
+        "src/openisp/calibration/tuning_interpolation_by_exposure_time.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/tuning_interpolation_by_exposure_time.py",
+      "test_target": "tests/calibration/test_tuning_interpolation_by_exposure_time.py",
+      "test_targets": [
+        "tests/calibration/test_tuning_interpolation_by_exposure_time.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Tuning interpolation by CCT",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/92.json",
+      "id": "92",
+      "implementation_files": [
+        "src/openisp/calibration/tuning_interpolation_by_cct.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/tuning_interpolation_by_cct.py",
+      "test_target": "tests/calibration/test_tuning_interpolation_by_cct.py",
+      "test_targets": [
+        "tests/calibration/test_tuning_interpolation_by_cct.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Tuning interpolation by sensor mode",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/93.json",
+      "id": "93",
+      "implementation_files": [
+        "src/openisp/calibration/tuning_interpolation_by_sensor_mode.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/tuning_interpolation_by_sensor_mode.py",
+      "test_target": "tests/calibration/test_tuning_interpolation_by_sensor_mode.py",
+      "test_targets": [
+        "tests/calibration/test_tuning_interpolation_by_sensor_mode.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Lens-shading calibration tool",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/94.json",
+      "id": "94",
+      "implementation_files": [
+        "src/openisp/calibration/lens_shading_calibration_tool.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/lens_shading_calibration_tool.py",
+      "test_target": "tests/calibration/test_lens_shading_calibration_tool.py",
+      "test_targets": [
+        "tests/calibration/test_lens_shading_calibration_tool.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "CCM calibration tool",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/95.json",
+      "id": "95",
+      "implementation_files": [
+        "src/openisp/calibration/ccm_calibration_tool.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/ccm_calibration_tool.py",
+      "test_target": "tests/calibration/test_ccm_calibration_tool.py",
+      "test_targets": [
+        "tests/calibration/test_ccm_calibration_tool.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Noise calibration tool",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/96.json",
+      "id": "96",
+      "implementation_files": [
+        "src/openisp/calibration/noise_calibration_tool.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/noise_calibration_tool.py",
+      "test_target": "tests/calibration/test_noise_calibration_tool.py",
+      "test_targets": [
+        "tests/calibration/test_noise_calibration_tool.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Defect-map generation",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/97.json",
+      "id": "97",
+      "implementation_files": [
+        "src/openisp/calibration/defect_map_generation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/defect_map_generation.py",
+      "test_target": "tests/calibration/test_defect_map_generation.py",
+      "test_targets": [
+        "tests/calibration/test_defect_map_generation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Versioned tuning schema",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/98.json",
+      "id": "98",
+      "implementation_files": [
+        "src/openisp/calibration/versioned_tuning_schema.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/versioned_tuning_schema.py",
+      "test_target": "tests/calibration/test_versioned_tuning_schema.py",
+      "test_targets": [
+        "tests/calibration/test_versioned_tuning_schema.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Daylight, low-light and HDR presets",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/99.json",
+      "id": "99",
+      "implementation_files": [
+        "src/openisp/calibration/daylight_low_light_and_hdr_presets.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/daylight_low_light_and_hdr_presets.py",
+      "test_target": "tests/calibration/test_daylight_low_light_and_hdr_presets.py",
+      "test_targets": [
+        "tests/calibration/test_daylight_low_light_and_hdr_presets.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Image-quality regression suite",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/100.json",
+      "id": "100",
+      "implementation_files": [
+        "src/openisp/calibration/image_quality_regression_suite.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/image_quality_regression_suite.py",
+      "test_target": "tests/calibration/test_image_quality_regression_suite.py",
+      "test_targets": [
+        "tests/calibration/test_image_quality_regression_suite.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Objective-IQ and reference-capture datasets",
+      "category": "11. Tuning and calibration",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/101.json",
+      "id": "101",
+      "implementation_files": [
+        "src/openisp/calibration/objective_iq_and_reference_capture_datasets.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/calibration/objective_iq_and_reference_capture_datasets.py",
+      "test_target": "tests/calibration/test_objective_iq_and_reference_capture_datasets.py",
+      "test_targets": [
+        "tests/calibration/test_objective_iq_and_reference_capture_datasets.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Per-frame metadata",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/102.json",
+      "id": "102",
+      "implementation_files": [
+        "src/openisp/core/per_frame_metadata.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/per_frame_metadata.py",
+      "test_target": "tests/core/test_per_frame_metadata.py",
+      "test_targets": [
+        "tests/core/test_per_frame_metadata.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Statistics-to-control feedback loop",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/103.json",
+      "id": "103",
+      "implementation_files": [
+        "src/openisp/core/statistics_to_control_feedback_loop.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/statistics_to_control_feedback_loop.py",
+      "test_target": "tests/core/test_statistics_to_control_feedback_loop.py",
+      "test_targets": [
+        "tests/core/test_statistics_to_control_feedback_loop.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Parameter history and delayed-control tracking",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/104.json",
+      "id": "104",
+      "implementation_files": [
+        "src/openisp/core/parameter_history_and_delayed_control_tracking.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/parameter_history_and_delayed_control_tracking.py",
+      "test_target": "tests/core/test_parameter_history_and_delayed_control_tracking.py",
+      "test_targets": [
+        "tests/core/test_parameter_history_and_delayed_control_tracking.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Explicit clipping and range conventions",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/105.json",
+      "id": "105",
+      "implementation_files": [
+        "src/openisp/core/explicit_clipping_and_range_conventions.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/explicit_clipping_and_range_conventions.py",
+      "test_target": "tests/core/test_explicit_clipping_and_range_conventions.py",
+      "test_targets": [
+        "tests/core/test_explicit_clipping_and_range_conventions.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Per-stage enable/bypass",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/106.json",
+      "id": "106",
+      "implementation_files": [
+        "src/openisp/core/per_stage_enable_bypass.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/per_stage_enable_bypass.py",
+      "test_target": "tests/core/test_per_stage_enable_bypass.py",
+      "test_targets": [
+        "tests/core/test_per_stage_enable_bypass.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Configurable stage order with dependency validation",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/107.json",
+      "id": "107",
+      "implementation_files": [
+        "src/openisp/core/configurable_stage_order_with_dependency_validation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/configurable_stage_order_with_dependency_validation.py",
+      "test_target": "tests/core/test_configurable_stage_order_with_dependency_validation.py",
+      "test_targets": [
+        "tests/core/test_configurable_stage_order_with_dependency_validation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Robust Bayer-pattern and bit-depth support",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/108.json",
+      "id": "108",
+      "implementation_files": [
+        "src/openisp/core/robust_bayer_pattern_and_bit_depth_support.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/robust_bayer_pattern_and_bit_depth_support.py",
+      "test_target": "tests/core/test_robust_bayer_pattern_and_bit_depth_support.py",
+      "test_targets": [
+        "tests/core/test_robust_bayer_pattern_and_bit_depth_support.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "DNG/RAW metadata import",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/109.json",
+      "id": "109",
+      "implementation_files": [
+        "src/openisp/core/dng_raw_metadata_import.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/dng_raw_metadata_import.py",
+      "test_target": "tests/core/test_dng_raw_metadata_import.py",
+      "test_targets": [
+        "tests/core/test_dng_raw_metadata_import.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Intermediate-stage export",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/110.json",
+      "id": "110",
+      "implementation_files": [
+        "src/openisp/core/intermediate_stage_export.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/intermediate_stage_export.py",
+      "test_target": "tests/core/test_intermediate_stage_export.py",
+      "test_targets": [
+        "tests/core/test_intermediate_stage_export.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Reproducible configuration snapshots",
+      "category": "12. Package/control architecture",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/111.json",
+      "id": "111",
+      "implementation_files": [
+        "src/openisp/core/reproducible_configuration_snapshots.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/reproducible_configuration_snapshots.py",
+      "test_target": "tests/core/test_reproducible_configuration_snapshots.py",
+      "test_targets": [
+        "tests/core/test_reproducible_configuration_snapshots.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Split AWB estimation from white-balance gain application",
+      "category": "13. Specific openISP fixes",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/112.json",
+      "id": "112",
+      "implementation_files": [
+        "src/openisp/stages/legacy.py",
+        "model/awb.py"
+      ],
+      "implementation_state": "implemented",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/stages/split_awb_estimation_from_white_balance_gain_application.py",
+      "test_target": "tests/unit/test_stabilization_fixes.py",
+      "test_targets": [
+        "tests/unit/test_stabilization_fixes.py",
+        "tests/integration/test_reference_pipeline.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Connect gamma output to the downstream color-space conversion",
+      "category": "13. Specific openISP fixes",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/113.json",
+      "id": "113",
+      "implementation_files": [
+        "src/openisp/stages/legacy.py",
+        "isp_pipeline.py"
+      ],
+      "implementation_state": "implemented",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/stages/connect_gamma_output_to_the_downstream_color_space_conversion.py",
+      "test_target": "tests/unit/test_stabilization_fixes.py",
+      "test_targets": [
+        "tests/unit/test_stabilization_fixes.py",
+        "tests/integration/test_reference_pipeline.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Fix hue rotation being overwritten by saturation",
+      "category": "13. Specific openISP fixes",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/114.json",
+      "id": "114",
+      "implementation_files": [
+        "src/openisp/stages/legacy.py",
+        "model/hsc.py"
+      ],
+      "implementation_state": "implemented",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/stages/fix_hue_rotation_being_overwritten_by_saturation.py",
+      "test_target": "tests/unit/test_stabilization_fixes.py",
+      "test_targets": [
+        "tests/unit/test_stabilization_fixes.py",
+        "tests/regression/test_image_regression.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Fix the GRBG path in chroma-noise filtering",
+      "category": "13. Specific openISP fixes",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/115.json",
+      "id": "115",
+      "implementation_files": [
+        "src/openisp/stages/legacy.py",
+        "model/cnf.py"
+      ],
+      "implementation_state": "implemented",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/stages/fix_the_grbg_path_in_chroma_noise_filtering.py",
+      "test_target": "tests/unit/test_bayer_patterns.py",
+      "test_targets": [
+        "tests/unit/test_bayer_patterns.py",
+        "tests/integration/test_reference_pipeline.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Validate all four Bayer patterns across every Bayer-domain module",
+      "category": "13. Specific openISP fixes",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/116.json",
+      "id": "116",
+      "implementation_files": [
+        "tests/unit/test_bayer_patterns.py"
+      ],
+      "implementation_state": "implemented",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/stages/validate_all_four_bayer_patterns_across_every_bayer_domain_module.py",
+      "test_target": "tests/unit/test_bayer_patterns.py",
+      "test_targets": [
+        "tests/unit/test_bayer_patterns.py",
+        "tests/integration/test_reference_pipeline.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Add numerical and image-regression tests",
+      "category": "13. Specific openISP fixes",
+      "dependencies": [],
+      "evidence": "artifacts/checklist/117.json",
+      "id": "117",
+      "implementation_files": [
+        "tests/unit",
+        "tests/integration",
+        "tests/regression",
+        "tests/performance"
+      ],
+      "implementation_state": "implemented",
+      "milestone": "M1-foundation",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/stages/add_numerical_and_image_regression_tests.py",
+      "test_target": "tests/unit",
+      "test_targets": [
+        "tests/unit",
+        "tests/integration",
+        "tests/regression",
+        "tests/performance"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Sensor-native HDR mode descriptor and deinterleaving",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [
+        "1",
+        "4",
+        "105"
+      ],
+      "evidence": "artifacts/checklist/118.json",
+      "id": "118",
+      "implementation_files": [
+        "src/openisp/hdr/sensor_native_hdr_mode_descriptor_and_deinterleaving.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/hdr/sensor_native_hdr_mode_descriptor_and_deinterleaving.py",
+      "test_target": "tests/hdr/test_sensor_native_hdr_mode_descriptor_and_deinterleaving.py",
+      "test_targets": [
+        "tests/hdr/test_sensor_native_hdr_mode_descriptor_and_deinterleaving.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Per-exposure black, white, linearization and conversion-gain normalization",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [
+        "1",
+        "2",
+        "4",
+        "118"
+      ],
+      "evidence": "artifacts/checklist/119.json",
+      "id": "119",
+      "implementation_files": [
+        "src/openisp/hdr/per_exposure_black_white_linearization_and_conversion_gain_normalization.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/hdr/per_exposure_black_white_linearization_and_conversion_gain_normalization.py",
+      "test_target": "tests/hdr/test_per_exposure_black_white_linearization_and_conversion_gain_normalization.py",
+      "test_targets": [
+        "tests/hdr/test_per_exposure_black_white_linearization_and_conversion_gain_normalization.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "HDR AE exposure and gain-ratio control",
+      "category": "3. Automatic control",
+      "dependencies": [
+        "12",
+        "13",
+        "18",
+        "118",
+        "119"
+      ],
+      "evidence": "artifacts/checklist/120.json",
+      "id": "120",
+      "implementation_files": [
+        "src/openisp/controls/hdr_ae_exposure_and_gain_ratio_control.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/controls/hdr_ae_exposure_and_gain_ratio_control.py",
+      "test_target": "tests/controls/test_hdr_ae_exposure_and_gain_ratio_control.py",
+      "test_targets": [
+        "tests/controls/test_hdr_ae_exposure_and_gain_ratio_control.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Sensor-native HDR merge, seam and motion handling",
+      "category": "4. HDR and dynamic range",
+      "dependencies": [
+        "31",
+        "32",
+        "118",
+        "119",
+        "120"
+      ],
+      "evidence": "artifacts/checklist/121.json",
+      "id": "121",
+      "implementation_files": [
+        "src/openisp/hdr/sensor_native_hdr_merge_seam_and_motion_handling.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/hdr/sensor_native_hdr_merge_seam_and_motion_handling.py",
+      "test_target": "tests/hdr/test_sensor_native_hdr_merge_seam_and_motion_handling.py",
+      "test_targets": [
+        "tests/hdr/test_sensor_native_hdr_merge_seam_and_motion_handling.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Generic CFA descriptor beyond 2\u00d72 Bayer",
+      "category": "1. RAW front end",
+      "dependencies": [
+        "1",
+        "108"
+      ],
+      "evidence": "artifacts/checklist/122.json",
+      "id": "122",
+      "implementation_files": [
+        "src/openisp/raw/generic_cfa_descriptor_beyond_2_2_bayer.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P0",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/raw/generic_cfa_descriptor_beyond_2_2_bayer.py",
+      "test_target": "tests/raw/test_generic_cfa_descriptor_beyond_2_2_bayer.py",
+      "test_targets": [
+        "tests/raw/test_generic_cfa_descriptor_beyond_2_2_bayer.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Quad-Bayer/Tetracell binning and remosaic",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [
+        "122"
+      ],
+      "evidence": "artifacts/checklist/123.json",
+      "id": "123",
+      "implementation_files": [
+        "src/openisp/demosaic/quad_bayer_tetracell_binning_and_remosaic.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/demosaic/quad_bayer_tetracell_binning_and_remosaic.py",
+      "test_target": "tests/demosaic/test_quad_bayer_tetracell_binning_and_remosaic.py",
+      "test_targets": [
+        "tests/demosaic/test_quad_bayer_tetracell_binning_and_remosaic.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "RGBW/RCCB/clear-pixel statistics and reconstruction",
+      "category": "6. Demosaic and artifacts",
+      "dependencies": [
+        "52",
+        "60",
+        "122"
+      ],
+      "evidence": "artifacts/checklist/124.json",
+      "id": "124",
+      "implementation_files": [
+        "src/openisp/demosaic/rgbw_rccb_clear_pixel_statistics_and_reconstruction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/demosaic/rgbw_rccb_clear_pixel_statistics_and_reconstruction.py",
+      "test_target": "tests/demosaic/test_rgbw_rccb_clear_pixel_statistics_and_reconstruction.py",
+      "test_targets": [
+        "tests/demosaic/test_rgbw_rccb_clear_pixel_statistics_and_reconstruction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "PWM LED flicker-detection statistics and confidence",
+      "category": "2. Image statistics",
+      "dependencies": [
+        "11",
+        "12",
+        "17"
+      ],
+      "evidence": "artifacts/checklist/125.json",
+      "id": "125",
+      "implementation_files": [
+        "src/openisp/statistics/pwm_led_flicker_detection_statistics_and_confidence.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/statistics/pwm_led_flicker_detection_statistics_and_confidence.py",
+      "test_target": "tests/statistics/test_pwm_led_flicker_detection_statistics_and_confidence.py",
+      "test_targets": [
+        "tests/statistics/test_pwm_led_flicker_detection_statistics_and_confidence.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "PWM LED flicker mitigation and HDR interaction",
+      "category": "3. Automatic control",
+      "dependencies": [
+        "18",
+        "22",
+        "118",
+        "120",
+        "125"
+      ],
+      "evidence": "artifacts/checklist/126.json",
+      "id": "126",
+      "implementation_files": [
+        "src/openisp/controls/pwm_led_flicker_mitigation_and_hdr_interaction.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/controls/pwm_led_flicker_mitigation_and_hdr_interaction.py",
+      "test_target": "tests/controls/test_pwm_led_flicker_mitigation_and_hdr_interaction.py",
+      "test_targets": [
+        "tests/controls/test_pwm_led_flicker_mitigation_and_hdr_interaction.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Per-stage numerical precision and domain policy",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "1",
+        "105"
+      ],
+      "evidence": "artifacts/checklist/127.json",
+      "id": "127",
+      "implementation_files": [
+        "src/openisp/core/per_stage_numerical_precision_and_domain_policy.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/per_stage_numerical_precision_and_domain_policy.py",
+      "test_target": "tests/core/test_per_stage_numerical_precision_and_domain_policy.py",
+      "test_targets": [
+        "tests/core/test_per_stage_numerical_precision_and_domain_policy.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Rounding, saturation, dither and output quantization",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "105",
+        "127"
+      ],
+      "evidence": "artifacts/checklist/128.json",
+      "id": "128",
+      "implementation_files": [
+        "src/openisp/core/rounding_saturation_dither_and_output_quantization.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P1",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/rounding_saturation_dither_and_output_quantization.py",
+      "test_target": "tests/core/test_rounding_saturation_dither_and_output_quantization.py",
+      "test_targets": [
+        "tests/core/test_rounding_saturation_dither_and_output_quantization.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Reference workloads and frame/per-stage timing budgets",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "102",
+        "111"
+      ],
+      "evidence": "artifacts/checklist/129.json",
+      "id": "129",
+      "implementation_files": [
+        "src/openisp/core/reference_workloads_and_frame_per_stage_timing_budgets.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/reference_workloads_and_frame_per_stage_timing_budgets.py",
+      "test_target": "tests/core/test_reference_workloads_and_frame_per_stage_timing_budgets.py",
+      "test_targets": [
+        "tests/core/test_reference_workloads_and_frame_per_stage_timing_budgets.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Peak memory, temporary-array and copy accounting",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "129"
+      ],
+      "evidence": "artifacts/checklist/130.json",
+      "id": "130",
+      "implementation_files": [
+        "src/openisp/core/peak_memory_temporary_array_and_copy_accounting.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/peak_memory_temporary_array_and_copy_accounting.py",
+      "test_target": "tests/core/test_peak_memory_temporary_array_and_copy_accounting.py",
+      "test_targets": [
+        "tests/core/test_peak_memory_temporary_array_and_copy_accounting.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Tiling, stripe and ROI processing with halo/border handling",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "105",
+        "106",
+        "107"
+      ],
+      "evidence": "artifacts/checklist/131.json",
+      "id": "131",
+      "implementation_files": [
+        "src/openisp/core/tiling_stripe_and_roi_processing_with_halo_border_handling.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/tiling_stripe_and_roi_processing_with_halo_border_handling.py",
+      "test_target": "tests/core/test_tiling_stripe_and_roi_processing_with_halo_border_handling.py",
+      "test_targets": [
+        "tests/core/test_tiling_stripe_and_roi_processing_with_halo_border_handling.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Vectorized or accelerated backend with numerical equivalence",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "127",
+        "129",
+        "131"
+      ],
+      "evidence": "artifacts/checklist/132.json",
+      "id": "132",
+      "implementation_files": [
+        "src/openisp/core/vectorized_or_accelerated_backend_with_numerical_equivalence.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/vectorized_or_accelerated_backend_with_numerical_equivalence.py",
+      "test_target": "tests/core/test_vectorized_or_accelerated_backend_with_numerical_equivalence.py",
+      "test_targets": [
+        "tests/core/test_vectorized_or_accelerated_backend_with_numerical_equivalence.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Dependency license, provenance and clean-room inventory",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "111"
+      ],
+      "evidence": "artifacts/checklist/133.json",
+      "id": "133",
+      "implementation_files": [
+        "src/openisp/core/dependency_license_provenance_and_clean_room_inventory.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/dependency_license_provenance_and_clean_room_inventory.py",
+      "test_target": "tests/core/test_dependency_license_provenance_and_clean_room_inventory.py",
+      "test_targets": [
+        "tests/core/test_dependency_license_provenance_and_clean_room_inventory.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Patent/FTO legal release gate",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "133"
+      ],
+      "evidence": "artifacts/checklist/134.json",
+      "id": "134",
+      "implementation_files": [
+        "src/openisp/core/patent_fto_legal_release_gate.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/patent_fto_legal_release_gate.py",
+      "test_target": "tests/core/test_patent_fto_legal_release_gate.py",
+      "test_targets": [
+        "tests/core/test_patent_fto_legal_release_gate.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "ISO 12233 SFR/MTF measurement",
+      "category": "11. Tuning and calibration",
+      "dependencies": [
+        "100",
+        "101"
+      ],
+      "evidence": "artifacts/checklist/135.json",
+      "id": "135",
+      "implementation_files": [
+        "src/openisp/calibration/iso_12233_sfr_mtf_measurement.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/calibration/iso_12233_sfr_mtf_measurement.py",
+      "test_target": "tests/calibration/test_iso_12233_sfr_mtf_measurement.py",
+      "test_targets": [
+        "tests/calibration/test_iso_12233_sfr_mtf_measurement.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Color-chart \u0394E00 under controlled illuminants",
+      "category": "11. Tuning and calibration",
+      "dependencies": [
+        "95",
+        "100",
+        "101"
+      ],
+      "evidence": "artifacts/checklist/136.json",
+      "id": "136",
+      "implementation_files": [
+        "src/openisp/calibration/color_chart_e00_under_controlled_illuminants.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/calibration/color_chart_e00_under_controlled_illuminants.py",
+      "test_target": "tests/calibration/test_color_chart_e00_under_controlled_illuminants.py",
+      "test_targets": [
+        "tests/calibration/test_color_chart_e00_under_controlled_illuminants.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "ISO 15739 output noise, SNR and dynamic-range measurement",
+      "category": "11. Tuning and calibration",
+      "dependencies": [
+        "96",
+        "100",
+        "101"
+      ],
+      "evidence": "artifacts/checklist/137.json",
+      "id": "137",
+      "implementation_files": [
+        "src/openisp/calibration/iso_15739_output_noise_snr_and_dynamic_range_measurement.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/calibration/iso_15739_output_noise_snr_and_dynamic_range_measurement.py",
+      "test_target": "tests/calibration/test_iso_15739_output_noise_snr_and_dynamic_range_measurement.py",
+      "test_targets": [
+        "tests/calibration/test_iso_15739_output_noise_snr_and_dynamic_range_measurement.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "OECF and rendered dynamic-range measurement",
+      "category": "11. Tuning and calibration",
+      "dependencies": [
+        "100",
+        "101"
+      ],
+      "evidence": "artifacts/checklist/138.json",
+      "id": "138",
+      "implementation_files": [
+        "src/openisp/calibration/oecf_and_rendered_dynamic_range_measurement.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/calibration/oecf_and_rendered_dynamic_range_measurement.py",
+      "test_target": "tests/calibration/test_oecf_and_rendered_dynamic_range_measurement.py",
+      "test_targets": [
+        "tests/calibration/test_oecf_and_rendered_dynamic_range_measurement.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Controlled IQ lab setup, chart/illuminant protocol and metadata",
+      "category": "11. Tuning and calibration",
+      "dependencies": [
+        "94",
+        "95",
+        "96",
+        "97",
+        "101",
+        "135",
+        "136",
+        "137",
+        "138"
+      ],
+      "evidence": "artifacts/checklist/139.json",
+      "id": "139",
+      "implementation_files": [
+        "src/openisp/calibration/controlled_iq_lab_setup_chart_illuminant_protocol_and_metadata.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/calibration/controlled_iq_lab_setup_chart_illuminant_protocol_and_metadata.py",
+      "test_target": "tests/calibration/test_controlled_iq_lab_setup_chart_illuminant_protocol_and_metadata.py",
+      "test_targets": [
+        "tests/calibration/test_controlled_iq_lab_setup_chart_illuminant_protocol_and_metadata.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Flare and veiling-glare characterization and suppression",
+      "category": "8. Detail and appearance",
+      "dependencies": [
+        "89",
+        "100",
+        "101"
+      ],
+      "evidence": "artifacts/checklist/140.json",
+      "id": "140",
+      "implementation_files": [
+        "src/openisp/detail/flare_and_veiling_glare_characterization_and_suppression.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/detail/flare_and_veiling_glare_characterization_and_suppression.py",
+      "test_target": "tests/detail/test_flare_and_veiling_glare_characterization_and_suppression.py",
+      "test_targets": [
+        "tests/detail/test_flare_and_veiling_glare_characterization_and_suppression.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Atmospheric dehaze and aerial-contrast restoration",
+      "category": "10. Drone-specific",
+      "dependencies": [
+        "33",
+        "34",
+        "100"
+      ],
+      "evidence": "artifacts/checklist/141.json",
+      "id": "141",
+      "implementation_files": [
+        "src/openisp/drone/atmospheric_dehaze_and_aerial_contrast_restoration.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M6-drone-optional",
+      "priority": "P2",
+      "requirement_level": "Optional",
+      "scope": "4. Drone/computational-imaging extensions",
+      "target_module": "src/openisp/drone/atmospheric_dehaze_and_aerial_contrast_restoration.py",
+      "test_target": "tests/drone/test_atmospheric_dehaze_and_aerial_contrast_restoration.py",
+      "test_targets": [
+        "tests/drone/test_atmospheric_dehaze_and_aerial_contrast_restoration.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Temperature-dependent dark current and black-level drift",
+      "category": "1. RAW front end",
+      "dependencies": [
+        "4",
+        "10",
+        "96",
+        "119"
+      ],
+      "evidence": "artifacts/checklist/142.json",
+      "id": "142",
+      "implementation_files": [
+        "src/openisp/raw/temperature_dependent_dark_current_and_black_level_drift.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Core",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/raw/temperature_dependent_dark_current_and_black_level_drift.py",
+      "test_target": "tests/raw/test_temperature_dependent_dark_current_and_black_level_drift.py",
+      "test_targets": [
+        "tests/raw/test_temperature_dependent_dark_current_and_black_level_drift.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "PDAF statistics extraction and confidence",
+      "category": "2. Image statistics",
+      "dependencies": [
+        "9",
+        "102"
+      ],
+      "evidence": "artifacts/checklist/143.json",
+      "id": "143",
+      "implementation_files": [
+        "src/openisp/statistics/pdaf_statistics_extraction_and_confidence.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M5-hdr-sensors",
+      "priority": "P1",
+      "requirement_level": "Advanced",
+      "scope": "2. Sensor and lens integration",
+      "target_module": "src/openisp/statistics/pdaf_statistics_extraction_and_confidence.py",
+      "test_target": "tests/statistics/test_pdaf_statistics_extraction_and_confidence.py",
+      "test_targets": [
+        "tests/statistics/test_pdaf_statistics_extraction_and_confidence.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Post-demosaic luma denoise",
+      "category": "5. Noise reduction",
+      "dependencies": [
+        "10",
+        "46",
+        "127"
+      ],
+      "evidence": "artifacts/checklist/144.json",
+      "id": "144",
+      "implementation_files": [
+        "src/openisp/denoise/post_demosaic_luma_denoise.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-image-quality",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "1. Core ISP algorithms",
+      "target_module": "src/openisp/denoise/post_demosaic_luma_denoise.py",
+      "test_target": "tests/denoise/test_post_demosaic_luma_denoise.py",
+      "test_targets": [
+        "tests/denoise/test_post_demosaic_luma_denoise.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "AE exposure partitioning across shutter, analog/digital gain, aperture and ND",
+      "category": "3. Automatic control",
+      "dependencies": [
+        "18",
+        "27",
+        "104"
+      ],
+      "evidence": "artifacts/checklist/145.json",
+      "id": "145",
+      "implementation_files": [
+        "src/openisp/controls/ae_exposure_partitioning_across_shutter_analog_digital_gain_aperture_and_nd.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M3-controls",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/controls/ae_exposure_partitioning_across_shutter_analog_digital_gain_aperture_and_nd.py",
+      "test_target": "tests/controls/test_ae_exposure_partitioning_across_shutter_analog_digital_gain_aperture_and_nd.py",
+      "test_targets": [
+        "tests/controls/test_ae_exposure_partitioning_across_shutter_analog_digital_gain_aperture_and_nd.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Still-capture requests, ZSL, burst and video/still parameter divergence",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "78",
+        "102",
+        "104"
+      ],
+      "evidence": "artifacts/checklist/146.json",
+      "id": "146",
+      "implementation_files": [
+        "src/openisp/core/still_capture_requests_zsl_burst_and_video_still_parameter_divergence.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M1-foundation",
+      "priority": "P1",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/core/still_capture_requests_zsl_burst_and_video_still_parameter_divergence.py",
+      "test_target": "tests/core/test_still_capture_requests_zsl_burst_and_video_still_parameter_divergence.py",
+      "test_targets": [
+        "tests/core/test_still_capture_requests_zsl_burst_and_video_still_parameter_divergence.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "DNG/RAW writing and round-trip validation",
+      "category": "9. Geometry and output",
+      "dependencies": [
+        "1",
+        "60",
+        "109"
+      ],
+      "evidence": "artifacts/checklist/147.json",
+      "id": "147",
+      "implementation_files": [
+        "src/openisp/geometry/dng_raw_writing_and_round_trip_validation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P1",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/geometry/dng_raw_writing_and_round_trip_validation.py",
+      "test_target": "tests/geometry/test_dng_raw_writing_and_round_trip_validation.py",
+      "test_targets": [
+        "tests/geometry/test_dng_raw_writing_and_round_trip_validation.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Exif/XMP/GPS/orientation metadata writing",
+      "category": "9. Geometry and output",
+      "dependencies": [
+        "60",
+        "78",
+        "102",
+        "147"
+      ],
+      "evidence": "artifacts/checklist/148.json",
+      "id": "148",
+      "implementation_files": [
+        "src/openisp/geometry/exif_xmp_gps_orientation_metadata_writing.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M4-product-output",
+      "priority": "P1",
+      "requirement_level": "Core",
+      "scope": "3. Camera product integration",
+      "target_module": "src/openisp/geometry/exif_xmp_gps_orientation_metadata_writing.py",
+      "test_target": "tests/geometry/test_exif_xmp_gps_orientation_metadata_writing.py",
+      "test_targets": [
+        "tests/geometry/test_exif_xmp_gps_orientation_metadata_writing.py"
+      ],
+      "workbook_status": "Not started"
+    },
+    {
+      "capability": "Error handling, timeouts and degraded operation",
+      "category": "12. Package/control architecture",
+      "dependencies": [
+        "102",
+        "103",
+        "104",
+        "106",
+        "107"
+      ],
+      "evidence": "artifacts/checklist/149.json",
+      "id": "149",
+      "implementation_files": [
+        "src/openisp/core/error_handling_timeouts_and_degraded_operation.py"
+      ],
+      "implementation_state": "planned",
+      "milestone": "M7-release",
+      "priority": "P0",
+      "requirement_level": "Core",
+      "scope": "5. Engineering, validation, performance, licensing, release readiness",
+      "target_module": "src/openisp/core/error_handling_timeouts_and_degraded_operation.py",
+      "test_target": "tests/core/test_error_handling_timeouts_and_degraded_operation.py",
+      "test_targets": [
+        "tests/core/test_error_handling_timeouts_and_degraded_operation.py"
+      ],
+      "workbook_status": "Not started"
+    }
+  ],
+  "schema_version": 1,
+  "source": "docs/openISP_professional_ISP_checklist_UPDATED_v2.xlsx",
+  "source_sha256": "7c715f1b802f31ce8eea30231b14291a9c29300efdbab04d0c95cd4d8b530017",
+  "status_authority": "The XLSX Status column is authoritative; implementation_state is code evidence only."
+}

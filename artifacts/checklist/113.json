@@ -1,0 +1,10 @@
+{
+  "id": "113",
+  "implementation_state": "implemented",
+  "workbook_status_at_verification": "Not started",
+  "summary": "Gamma output now feeds color-space conversion in both the compatibility script and the typed pipeline.",
+  "implementation": ["isp_pipeline.py", "src/openisp/stages/legacy.py"],
+  "tests": ["tests/unit/test_stabilization_fixes.py", "tests/integration/test_reference_pipeline.py"],
+  "verification": ".venv/bin/python -m pytest",
+  "result": "41 passed"
+}

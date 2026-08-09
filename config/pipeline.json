@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "profile": "legacy-reference",
+  "stages": [
+    {"name": "dead-pixel-correction", "parameters": {"threshold": 30, "mode": "gradient", "clip": 1023}},
+    {"name": "black-level-compensation", "parameters": {"clip": 1023}},
+    {"name": "anti-aliasing-filter"},
+    {"name": "awb-estimate"},
+    {"name": "white-balance-gain", "parameters": {"use_estimated": true, "clip": 1023}},
+    {"name": "chroma-noise-filter", "parameters": {"threshold": 0, "gains": [1.5, 1.0, 1.0, 1.1], "clip": 1023}},
+    {"name": "demosaic", "parameters": {"mode": "malvar", "clip": 1023}},
+    {"name": "color-correction-matrix"},
+    {"name": "gamma", "parameters": {"gamma": 0.5, "bit_depth": 10}},
+    {"name": "color-space-conversion"},
+    {"name": "non-local-means", "enabled": false, "parameters": {"patch_radius": 1, "search_radius": 4, "strength": 15, "clip": 255}},
+    {"name": "bilateral-denoise", "enabled": false},
+    {"name": "edge-enhancement"},
+    {"name": "false-color-suppression"},
+    {"name": "hue-saturation", "parameters": {"hue_degrees": 0, "saturation": 256, "clip": 255}},
+    {"name": "brightness-contrast", "parameters": {"brightness": 10, "contrast": 0.3125, "clip": 255}}
+  ]
+}

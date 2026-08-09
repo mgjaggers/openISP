@@ -1,0 +1,11 @@
+{
+  "id": "112",
+  "implementation_state": "implemented",
+  "workbook_status_at_verification": "Not started",
+  "summary": "AWB estimation publishes gains without changing pixels; white-balance gain application is a separate stage.",
+  "implementation": ["src/openisp/stages/legacy.py", "config/pipeline.json"],
+  "tests": ["tests/unit/test_stabilization_fixes.py", "tests/integration/test_reference_pipeline.py"],
+  "verification": ".venv/bin/python -m pytest",
+  "result": "41 passed",
+  "boundary": "The estimator is a gray-world reference. Checklist item 23 owns production automatic-white-balance quality."
+}

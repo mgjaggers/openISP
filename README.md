@@ -110,6 +110,21 @@ python isp_pipeline.py
 
 It loads `test.raw` image and `config.csv` and executes the algorithms step by step.
 
+The maintained modular interface is installable with Python 3.10 or newer:
+
+```shell
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -e '.[dev]'
+.venv/bin/openisp validate-config config/pipeline.json --input-domain bayer
+```
+
+The original `python isp_pipeline.py` entry point remains available during the
+compatibility migration. New integrations should use the typed `openisp`
+package and JSON pipeline configuration. See
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md),
+[`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md), and
+[`docs/TRACEABILITY.md`](docs/TRACEABILITY.md).
+
 You can adjust the ISP pipeline as you want. However, algorithms like DPC, BLC, LSC, ANF, AWB, CFA, only work in Bayer domain. GC, CCM, CSC work in RGB domain. Others work in YUV domain. It's not saying like NF only work in YUV domain. Just in openISP case, it works in YUV domain. Noise filtering could be done in Bayer/RGB/YUV domain and in both temporal/spatial domain.
 
 ## License
